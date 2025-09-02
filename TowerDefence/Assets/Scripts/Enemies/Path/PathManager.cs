@@ -11,7 +11,6 @@ namespace TowerDefence
         {
             if (!paths.ContainsKey(id))
             {
-                // Ignore first element (parent itself) if needed
                 paths[id] = points;
             }
         }

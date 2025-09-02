@@ -16,6 +16,11 @@ namespace TowerDefence
         public GameObject m_prefab;
 
         [Header("Path")]
+        [TagSelector]
         public string m_pathID;
+
+        [Header("Spawn point")]
+        [TagSelector]
+        public string m_spawnPointID;
     }
 }

@@ -13,7 +13,6 @@ namespace TowerDefence
 
         private void Awake()
         {
-            // Singleton setup
             if (Instance != null && Instance != this)
             {
                 Destroy(gameObject);

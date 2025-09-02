@@ -8,7 +8,6 @@ namespace TowerDefence
     {
         [Header("Wave Settings")]
         [SerializeField] private WaveData[] m_waves;
-        [SerializeField] private Transform m_spawnPoint;
 
         private int currentWaveIndex = 0;
         private bool isSpawning = false;
@@ -40,7 +39,7 @@ namespace TowerDefence
 
         private void SpawnEnemy(EnemyData data)
         {
-            GameObject enemyObj = Instantiate(data.m_prefab, m_spawnPoint.position, Quaternion.identity);
+            GameObject enemyObj = Instantiate(data.m_prefab, SpawnPointManager.GetSpawnPoint(data.m_spawnPointID).position, Quaternion.identity);
             Enemy enemy = enemyObj.GetComponent<Enemy>();
             enemy.Initialize(data);
         }
