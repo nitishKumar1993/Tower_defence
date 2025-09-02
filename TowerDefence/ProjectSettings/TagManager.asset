@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GroundSpawnPoint_1
+  - GroundPath_1
   layers:
   - Default
   - TransparentFX

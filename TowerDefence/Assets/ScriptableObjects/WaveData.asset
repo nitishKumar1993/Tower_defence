@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: WaveData
   m_EditorClassIdentifier: 
   m_enemiesToSpawn:
-  - m_enemyData: {fileID: 0}
-    m_count: 0
-    m_spawnInterval: 0
-  - m_enemyData: {fileID: 0}
-    m_count: 0
-    m_spawnInterval: 0
+  - m_enemyData: {fileID: 11400000, guid: e5a53517c592371449640a6697a1a39a, type: 2}
+    m_count: 4
+    m_spawnInterval: 1

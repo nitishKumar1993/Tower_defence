@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 715821198}
   m_Layer: 0
   m_Name: Path_1
-  m_TagString: Untagged
+  m_TagString: GroundPath_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1638e68d2154bd4ab9f1507e4aaf743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathID: GroundPath_1
 --- !u!1 &742618245
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +676,7 @@ GameObject:
   - component: {fileID: 1222007407}
   m_Layer: 0
   m_Name: SpawnPoint
-  m_TagString: Untagged
+  m_TagString: GroundSpawnPoint_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad31ef0bc3bfe4f44b3e5d9cf7756131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pathID: GroundSpawnPoint_1
   m_point: {fileID: 1222007406}
 --- !u!1 &1483846677
 GameObject:

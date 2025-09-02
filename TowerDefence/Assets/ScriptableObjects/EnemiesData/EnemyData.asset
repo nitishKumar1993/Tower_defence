@@ -16,5 +16,6 @@ MonoBehaviour:
   m_moveSpeed: 2
   m_maxHealth: 5
   m_reward: 10
-  m_prefab: {fileID: 0}
-  m_pathID: 
+  m_prefab: {fileID: 5841323864791619721, guid: 0f313b585bc280d4f900aee4bde6bbe3, type: 3}
+  m_pathID: GroundPath_1
+  m_spawnPointID: GroundSpawnPoint_1

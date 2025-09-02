@@ -12,12 +12,24 @@ namespace TowerDefence
         private int currentWaveIndex = 0;
         private bool isSpawning = false;
 
+
+        private void Update()
+        {
+            //if (Input.GetKeyUp(KeyCode.Space))
+            //{
+            //    StartNextWave();
+            //}
+        }
+
         public void StartNextWave()
         {
             if (!isSpawning && currentWaveIndex < m_waves.Length)
             {
                 StartCoroutine(SpawnWave(m_waves[currentWaveIndex]));
                 currentWaveIndex++;
+
+                if(currentWaveIndex >= m_waves.Length)
+                    currentWaveIndex = 0;
             }
         }
 
