@@ -7,8 +7,7 @@ namespace TowerDefence
     public class WaveManager : MonoBehaviour
     {
         [Header("Wave Settings")]
-        [SerializeField] private WaveData[] m_waves; // Drag & drop WaveData SOs
-        [SerializeField] private Transform[] m_pathPoints; // Waypoints for enemies
+        [SerializeField] private WaveData[] m_waves;
         [SerializeField] private Transform m_spawnPoint;
 
         private int currentWaveIndex = 0;
@@ -43,7 +42,7 @@ namespace TowerDefence
         {
             GameObject enemyObj = Instantiate(data.m_prefab, m_spawnPoint.position, Quaternion.identity);
             Enemy enemy = enemyObj.GetComponent<Enemy>();
-            enemy.Initialize(data, m_pathPoints);
+            enemy.Initialize(data);
         }
     }
 }

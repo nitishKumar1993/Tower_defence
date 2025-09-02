@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1c83db9ad5d2f4e906bd0fc3532001, type: 3}
   m_Name: WaveData
   m_EditorClassIdentifier: 
-  m_enemiesToSpawn: []
+  m_enemiesToSpawn:
+  - m_enemyData: {fileID: 0}
+    m_count: 0
+    m_spawnInterval: 0
+  - m_enemyData: {fileID: 0}
+    m_count: 0
+    m_spawnInterval: 0

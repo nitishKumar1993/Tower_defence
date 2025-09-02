@@ -11,11 +11,11 @@ namespace TowerDefence
         private Transform[] path; // Assigned by WaveManager
         private int waypointIndex = 0;
 
-        public void Initialize(EnemyData enemyData, Transform[] pathPoints)
+        public void Initialize(EnemyData enemyData)
         {
             data = enemyData;
             currentHealth = data.m_maxHealth;
-            path = pathPoints;
+            path = PathManager.GetPath(data.m_pathID);
             waypointIndex = 0;
         }
 
