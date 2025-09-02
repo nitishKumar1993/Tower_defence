@@ -9,13 +9,13 @@ namespace TowerDefence
         public int m_currentHealth;
         public int m_currentCurrency;
 
-        [HideInInspector] public bool initialized = false;
+        [HideInInspector] public bool m_initialized = false;
 
         public void Initialize(GameSettings settings)
         {
             m_currentHealth = settings.m_startingHealth;
             m_currentCurrency = settings.m_startingCurrency;
-            initialized = true;
+            m_initialized = true;
         }
     }
 }

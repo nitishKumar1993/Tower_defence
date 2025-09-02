@@ -6,8 +6,8 @@ namespace TowerDefence
     public class UIManager : MonoBehaviour
     {
         [Header("UI References")]
-        [SerializeField] private Text healthText;
-        [SerializeField] private Text currencyText;
+        [SerializeField] private Text m_healthText;
+        [SerializeField] private Text m_currencyText;
         [SerializeField] private GameObject gameOverPanel;
 
         private void OnEnable()
@@ -26,12 +26,12 @@ namespace TowerDefence
 
         private void UpdateHealthUI(int health)
         {
-            healthText.text = $"Health: {health}";
+            m_healthText.text = $"Health: {health}";
         }
 
         private void UpdateCurrencyUI(int currency)
         {
-            currencyText.text = $"Currency: {currency}";
+            m_currencyText.text = $"Currency: {currency}";
         }
 
         private void ShowGameOver()

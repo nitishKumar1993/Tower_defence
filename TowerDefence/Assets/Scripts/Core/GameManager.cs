@@ -8,8 +8,8 @@ namespace TowerDefence
         public static GameManager Instance;
 
         [Header("Game Data")]
-        [SerializeField] private GameSettings gameSettings;
-        [SerializeField] private PlayerData playerData;
+        [SerializeField] private GameSettings m_gameSettings;
+        [SerializeField] private PlayerData m_playerData;
 
         private void Awake()
         {
@@ -24,11 +24,11 @@ namespace TowerDefence
 
         private void Start()
         {
-            if (!playerData.initialized)
-                playerData.Initialize(gameSettings);
+            if (!m_playerData.m_initialized)
+                m_playerData.Initialize(m_gameSettings);
 
-            EventBus.OnHealthChanged?.Invoke(playerData.m_currentHealth);
-            EventBus.OnCurrencyChanged?.Invoke(playerData.m_currentCurrency);
+            EventBus.OnHealthChanged?.Invoke(m_playerData.m_currentHealth);
+            EventBus.OnCurrencyChanged?.Invoke(m_playerData.m_currentCurrency);
 
             EventBus.OnGameStart?.Invoke();
         }
@@ -36,12 +36,12 @@ namespace TowerDefence
         #region Health
         public void TakeDamage(int damage)
         {
-            playerData.m_currentHealth -= damage;
-            EventBus.OnHealthChanged?.Invoke(playerData.m_currentHealth);
+            m_playerData.m_currentHealth -= damage;
+            EventBus.OnHealthChanged?.Invoke(m_playerData.m_currentHealth);
 
-            if (playerData.m_currentHealth <= 0)
+            if (m_playerData.m_currentHealth <= 0)
             {
-                playerData.m_currentHealth = 0;
+                m_playerData.m_currentHealth = 0;
                 EventBus.OnGameOver?.Invoke();
             }
         }
@@ -50,10 +50,10 @@ namespace TowerDefence
         #region Currency
         public bool SpendCurrency(int amount)
         {
-            if (playerData.m_currentCurrency >= amount)
+            if (m_playerData.m_currentCurrency >= amount)
             {
-                playerData.m_currentCurrency -= amount;
-                EventBus.OnCurrencyChanged?.Invoke(playerData.m_currentCurrency);
+                m_playerData.m_currentCurrency -= amount;
+                EventBus.OnCurrencyChanged?.Invoke(m_playerData.m_currentCurrency);
                 return true;
             }
             return false;
@@ -61,8 +61,8 @@ namespace TowerDefence
 
         public void EarnCurrency(int amount)
         {
-            playerData.m_currentCurrency += amount;
-            EventBus.OnCurrencyChanged?.Invoke(playerData.m_currentCurrency);
+            m_playerData.m_currentCurrency += amount;
+            EventBus.OnCurrencyChanged?.Invoke(m_playerData.m_currentCurrency);
         }
         #endregion
     }
