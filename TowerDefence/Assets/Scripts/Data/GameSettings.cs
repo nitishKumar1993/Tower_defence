@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSettings : MonoBehaviour
+namespace TowerDefence
 {
-    // Start is called before the first frame update
-    void Start()
+    [CreateAssetMenu(fileName = "GameSettings", menuName = "Game Data/Game Settings")]
+    public class GameSettings : ScriptableObject
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [Header("Starting Values")]
+        public int m_startingHealth = 10;
+        public int m_startingCurrency = 100;
     }
 }

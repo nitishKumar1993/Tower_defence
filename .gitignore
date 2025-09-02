@@ -26,6 +26,7 @@ CrashReports/
 *.obj
 *.suo
 *.user
+*.vs
 *.userosscache
 *.sln.docstates
 [Dd]ebug/
