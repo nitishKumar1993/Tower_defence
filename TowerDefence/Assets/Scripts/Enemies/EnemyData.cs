@@ -11,6 +11,7 @@ namespace TowerDefence
         public float m_moveSpeed = 2f;
         public int m_maxHealth = 5;
         public int m_reward = 10;
+        public int m_damageToTower = 1;
 
         [Header("Appearance")]
         public GameObject m_prefab;

@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1c83db9ad5d2f4e906bd0fc3532001, type: 3}
-  m_Name: WaveData
+  m_Script: {fileID: 11500000, guid: 54f979bb5fa9311499c6b12a3d85620b, type: 3}
+  m_Name: LaserTower
   m_EditorClassIdentifier: 
-  m_enemiesToSpawn:
-  - m_enemyData: {fileID: 11400000, guid: e5a53517c592371449640a6697a1a39a, type: 2}
-    m_count: 1
-    m_spawnInterval: 1
+  m_weaponName: Laser Tower
+  m_weaponType: 0
+  m_prefab: {fileID: 0}
+  m_cost: 50
+  m_cooldown: 0.5
+  m_range: 10
+  m_damage: 10
+  m_duration: 0

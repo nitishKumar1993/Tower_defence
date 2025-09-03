@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cfa80eedbbe0948bdd052f4428e9bc, type: 3}
   m_Name: EnemyData
   m_EditorClassIdentifier: 
-  m_name: 
+  m_name: GroundEnemy1
   m_moveSpeed: 2
-  m_maxHealth: 5
+  m_maxHealth: 50
   m_reward: 10
   m_prefab: {fileID: 5841323864791619721, guid: 0f313b585bc280d4f900aee4bde6bbe3, type: 3}
   m_pathID: GroundPath_1

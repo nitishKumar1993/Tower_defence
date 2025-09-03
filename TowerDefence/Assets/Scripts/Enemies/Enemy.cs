@@ -47,12 +47,15 @@ namespace TowerDefence
 
         public void TakeDamage(int damage)
         {
+            Debug.Log("TakeDamage Current Health before : " + currentHealth);
             currentHealth -= damage;
 
             if (currentHealth <= 0)
             {
                 Die();
             }
+
+            Debug.Log("Current Health after : " + currentHealth);
         }
 
         private void Die()
@@ -63,7 +66,7 @@ namespace TowerDefence
 
         private void ReachEnd()
         {
-            GameManager.Instance.TakeDamage(1); // Damage player base
+            GameManager.Instance.TakeDamage(data.m_damageToTower);
             Destroy(gameObject);
         }
     }

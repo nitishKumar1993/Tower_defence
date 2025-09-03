@@ -9,33 +9,33 @@ namespace TowerDefence
         [Header("Wave Settings")]
         [SerializeField] private WaveData[] m_waves;
 
-        private int currentWaveIndex = 0;
-        private bool isSpawning = false;
+        private int m_currentWaveIndex = 0;
+        private bool m_isSpawning = false;
 
 
         private void Update()
         {
-            //if (Input.GetKeyUp(KeyCode.Space))
-            //{
-            //    StartNextWave();
-            //}
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                StartNextWave();
+            }
         }
 
         public void StartNextWave()
         {
-            if (!isSpawning && currentWaveIndex < m_waves.Length)
+            if (!m_isSpawning && m_currentWaveIndex < m_waves.Length)
             {
-                StartCoroutine(SpawnWave(m_waves[currentWaveIndex]));
-                currentWaveIndex++;
+                StartCoroutine(SpawnWave(m_waves[m_currentWaveIndex]));
+                m_currentWaveIndex++;
 
-                if(currentWaveIndex >= m_waves.Length)
-                    currentWaveIndex = 0;
+                if(m_currentWaveIndex >= m_waves.Length)
+                    m_currentWaveIndex = 0;
             }
         }
 
         private IEnumerator SpawnWave(WaveData wave)
         {
-            isSpawning = true;
+            m_isSpawning = true;
 
             foreach (var enemyInfo in wave.m_enemiesToSpawn)
             {
@@ -46,7 +46,7 @@ namespace TowerDefence
                 }
             }
 
-            isSpawning = false;
+            m_isSpawning = false;
         }
 
         private void SpawnEnemy(EnemyData data)

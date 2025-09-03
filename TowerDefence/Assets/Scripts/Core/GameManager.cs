@@ -1,8 +1,10 @@
 using TowerDefence;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace TowerDefence
 {
+
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance;
@@ -30,6 +32,11 @@ namespace TowerDefence
             EventBus.OnCurrencyChanged?.Invoke(m_playerData.m_currentCurrency);
 
             EventBus.OnGameStart?.Invoke();
+        }
+
+        private void StartGame()
+        {
+            EventBus.OnGameStateChange?.Invoke(EventBus.GameState.InGame);
         }
 
         #region Health
