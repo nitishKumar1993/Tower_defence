@@ -17,5 +17,11 @@ namespace TowerDefence
         {
             cooldownTimers[data] = Time.time + data.m_cooldown;
         }
+
+        public static float GetRemainingTime(WeaponData data)
+        {
+            if (!cooldownTimers.ContainsKey(data)) return 0f;
+            return Mathf.Max(0f, cooldownTimers[data] - Time.time);
+        }
     }
 }
