@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_weaponName: Orbital Strike
   m_weaponType: 0
-  m_prefab: {fileID: 0}
+  m_prefab: {fileID: 8164279389862436457, guid: 385706d7f2dedc444a4c9dec12cab40a, type: 3}
   m_cost: 50
   m_cooldown: 5
   m_range: 5

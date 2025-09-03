@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_weaponName: Mine
   m_weaponType: 1
-  m_prefab: {fileID: 0}
+  m_prefab: {fileID: 6965341181235681482, guid: 2e1e6300331c4ef49921613beb23f58a, type: 3}
   m_cost: 50
   m_cooldown: 5
   m_range: 5

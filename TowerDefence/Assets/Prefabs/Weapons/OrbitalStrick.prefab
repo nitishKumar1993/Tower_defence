@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4038631241867598720}
   - component: {fileID: 2143731030030249348}
   - component: {fileID: 5941968437319078170}
+  - component: {fileID: -697147076696579974}
   m_Layer: 0
   m_Name: OrbitalStrick
   m_TagString: Untagged
@@ -97,3 +98,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1859128167378438ff859d7a3d6f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-697147076696579974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164279389862436457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e465ee7bfa3666b4f83d926ff388cfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_renderers: []

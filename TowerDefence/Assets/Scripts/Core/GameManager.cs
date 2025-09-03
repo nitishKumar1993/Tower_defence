@@ -73,5 +73,10 @@ namespace TowerDefence
             EventBus.OnCurrencyChanged?.Invoke(m_playerData.m_currentCurrency);
         }
         #endregion
+
+        public bool PlayerCanAfford(int cost)
+        {
+            return m_playerData.m_currentCurrency >= cost;
+        }
     }
 }

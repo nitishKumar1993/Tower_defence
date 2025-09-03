@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_weaponName: Fireball
   m_weaponType: 2
-  m_prefab: {fileID: 0}
+  m_prefab: {fileID: 8762425518931408112, guid: 6b4ba8d6da439de4590ae3a5d28d914f, type: 3}
   m_cost: 50
   m_cooldown: 5
   m_range: 5
