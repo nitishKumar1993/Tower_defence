@@ -25,6 +25,8 @@ namespace TowerDefence
 
         private void Start()
         {
+            m_playerData.m_initialized = false;
+            Debug.Log(m_playerData.m_initialized);
             if (!m_playerData.m_initialized)
                 m_playerData.Initialize(m_gameSettings);
 
