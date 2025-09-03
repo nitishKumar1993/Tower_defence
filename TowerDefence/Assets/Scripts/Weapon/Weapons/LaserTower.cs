@@ -1,10 +1,9 @@
 using TowerDefence;
 using UnityEngine;
 
-
 namespace TowerDefence
 {
-    public class LaserTower : MonoBehaviour
+    public class LaserTower : MonoBehaviour //(auto-attack tower)
     {
         [SerializeField] private WeaponData data;
         private float fireCooldown = 0f;

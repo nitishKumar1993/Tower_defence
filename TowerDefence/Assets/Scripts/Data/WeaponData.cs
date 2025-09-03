@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TowerDefence
 {
-    public enum WeaponType { LaserTower }
+    public enum WeaponType { LaserTower, Mine, Fireball, OrbitalStrike }
 
     [CreateAssetMenu(fileName = "WeaponData", menuName = "Game Data/Weapon Data")]
     public class WeaponData : ScriptableObject
