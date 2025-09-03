@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f979bb5fa9311499c6b12a3d85620b, type: 3}
+  m_Name: OrbitalStrike
+  m_EditorClassIdentifier: 
+  m_weaponName: Orbital Strike
+  m_weaponType: 0
+  m_prefab: {fileID: 0}
+  m_cost: 50
+  m_cooldown: 5
+  m_range: 5
+  m_damage: 10
+  m_duration: 0
